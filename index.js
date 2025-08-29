@@ -103,10 +103,10 @@ app.delete("/products/:id", async (req, res) => {
   }
 })
 
+const PORT = process.env.PORT || 5050;
 
-
-app.listen(5050, () => {
-  console.log("my server is running")
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
 });
 
 
